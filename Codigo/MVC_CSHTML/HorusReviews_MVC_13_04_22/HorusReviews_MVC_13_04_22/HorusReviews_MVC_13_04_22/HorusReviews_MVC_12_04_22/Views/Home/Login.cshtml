@@ -1,0 +1,101 @@
+﻿@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/SHARED/_Layout.cshtml";
+}
+
+<!-- <form>
+    <div class="form-group">
+        <label for="exampleInputEmail1">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    </div>
+    <div class="form-group">
+        <label for="exampleInputPassword1">Password</label>
+        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+    </div>
+    <div class="form-group form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form> -->
+
+<div class="corpo">
+    <style>
+        .spaaco {
+            margin-top: 150px;
+        }
+    </style>
+    <div class="spaaco"></div>
+
+    <div class="container-fluid">
+        <div class="row">
+
+            <div class="col">
+                <br /><h4>Já tem uma conta? Entre:</h4>
+                @using (@Html.BeginForm(FormMethod.Post))
+                {
+
+                    <div>
+                        @Html.Label("E-mail: ")<br />
+                        @Html.TextBox("email")<br />
+                    </div>
+
+                    <div>
+                        @Html.Label("Senha")<br />
+                        @Html.TextBox("senha")<br />
+                    </div>
+
+                    <div>
+                        <br /><input type="submit" value="Acesse" class="btn btn-secondary" /> <br />
+                    </div>
+
+                }
+            </div>
+
+            <div class="col">
+                <!--<br /><h4>Ainda não é cadastrado? Faça hoje mesmo: </h4>
+                @using (@Html.BeginForm("Login", "Home", FormMethod.Post))
+                {
+
+                    <div>
+                        @Html.Label("Nome")<br />
+                        @Html.TextBoxFor(f => f.Nome, new { @class = "form-control" })<br />
+                    </div>
+                    <div>
+                        @Html.Label("Nome de usuário")<br />
+                        @Html.TextBoxFor(f => f.UserName, new { @class = "form-control" })<br />
+                    </div>
+
+                    <div class="padCaix">
+                        @Html.Label("E-mail:")<br />
+                        @Html.TextBoxFor(f => f.Email, new { @class = "form-control" })<br />
+                    </div>
+
+                    <div>
+                        @Html.Label("Data de nascimento")<br />
+                        @Html.TextBoxFor(f => f.DataNasc, new { @class = "form-control" })
+                    </div>
+
+                    <div>
+                        @Html.Label("Senha")<br />
+                        @Html.TextBoxFor(f => f.Senha, new { @class = "form-control" })
+                    </div> -->
+
+                    <br /><input type="checkbox" id="concordoComTermos" name="concordoComTermos" value="Agreed">
+                    <label for="concordoComTermos">Concordo com os termos de uso e serviço.</label><br />
+
+                    <br /><input class="btn btn-dark" type="submit" value="Enviar" onclick="msgConfirm()"/>
+
+                    <br />
+
+                }
+                @Html.Raw(ViewBag.msg)
+            </div>
+
+        </div>
+    </div>
+
+    <div class="spaaco"></div>
+
+</div>

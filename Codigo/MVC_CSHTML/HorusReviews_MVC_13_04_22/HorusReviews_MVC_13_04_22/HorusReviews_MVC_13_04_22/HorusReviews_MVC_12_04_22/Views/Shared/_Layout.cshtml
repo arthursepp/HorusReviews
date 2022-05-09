@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - HorusReviews</title>
+    <!-- CSS DO BOOTSTRAP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <!-- SCRIPT DO JQUERY-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!--SCRIPT DO BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <!--SCRIPT FONTEAWESOME-->
+    <script src="https://kit.fontawesome.com/1dcfa88280.js" crossorigin="anonymous"></script>
+    <!--SCRIPT DO GOOGLE FONTS-->
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique:wght@300&display=swap" rel="stylesheet">
+    <!--LINK DO ARQUIVO CSS: -->
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm border-bottom box-shadow mb-3 bg-light">
+            <div class="container">
+
+                <!--Navbar - Links para outras páginas do site (Séries, animes etc.)-->
+                <style>
+                    .spaceA-Cab{
+
+                        display:flex;
+                        justify-content: space-around;
+                        align-items: center;
+                    }
+
+                </style>
+
+                <div class="container-fluid cab">
+                    <!--navbar-collapse collapse d-sm-inline-flex spaceA-Cab container-fluid-->
+
+                        <ul class="navbar">
+                            @Html.ActionLink("Filmes", "Index", "home", new { @class = "nav-link nav-item" })
+                            @Html.ActionLink("Séries", "Séries", "home", new { @class = "nav-link nav-item" })
+                            @Html.ActionLink("Animes", "Animes", "home", new { @class = "nav-link nav-item" })
+                            @Html.ActionLink("HQs", "HQS", "home", new { @class = "nav-link nav-item" })
+                            <a href="@Url.Action("Index", "Home")">
+                                <i><img src="~/css/IMGS/OlhoGenerico.jpg" class="img" width="50" /></i>
+                            </a>
+                            <form class="form-inline">
+                                <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+
+                            </form>
+
+                            <a href="@Url.Action("Login", "Home")">
+                                <i class="fas fa-user paddingUser"></i>
+                            </a>
+
+                            @Html.ActionLink("Perfil", "Perfil", "home", new { @class = "nav-link nav-item" })
+
+
+                        </ul>
+
+                </div>
+
+            </div>
+
+        </nav>
+    </header>
+    
+    <div class="corpo">
+        <div class="container">
+            <main role="main" class="pb-3">
+                @RenderBody()
+            </main>
+        </div>
+
+    </div>
+
+    <footer class="footer text-muted">
+        <div class="container">
+            <div class="container-fluid rodape">
+                <div class="row">
+                    <div class="col">
+                        <p>2022 - HORUS REVIEWS©</p>
+                    </div>
+                    <div class="col">
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-twitter-square"></i>
+                        <i class="fab fa-instagram-square"></i>
+                    </div>
+                    <div class="col">
+                        <i class="fab fa-google-play"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

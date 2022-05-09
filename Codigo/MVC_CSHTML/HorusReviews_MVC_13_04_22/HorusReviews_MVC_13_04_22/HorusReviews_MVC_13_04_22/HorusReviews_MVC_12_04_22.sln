@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32106.194
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HorusReviews_MVC_12_04_22", "HorusReviews_MVC_12_04_22\HorusReviews_MVC_12_04_22.csproj", "{B0672C2B-4E0D-42AD-9E63-1FB8FFCCA62D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B0672C2B-4E0D-42AD-9E63-1FB8FFCCA62D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0672C2B-4E0D-42AD-9E63-1FB8FFCCA62D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0672C2B-4E0D-42AD-9E63-1FB8FFCCA62D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0672C2B-4E0D-42AD-9E63-1FB8FFCCA62D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {793C78C0-8682-41F9-A057-A463CE92D816}
+	EndGlobalSection
+EndGlobal
