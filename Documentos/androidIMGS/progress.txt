@@ -1,9 +1,0 @@
- deleted	c-p
-location - 	sent
-login - 	sent
-account - 	sent
-cogplay - 	sent
-filmstrip - sent
-pb-outline - sent
-televisionC - sent
-domain - 	sent

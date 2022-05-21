@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">HorusReviews</string>
+
+    <string-array name="filmes">
+
+    <item>Eternos</item>
+    <item>Doutor Estranho</item>
+    <item>The Batman</item>
+    <item>Lightyear</item>
+    <item>Jujutsu Kaizen: 0</item>
+    <item>The Flash</item>
+
+    </string-array>
+
+    <string-array name="descricao">
+
+        <item>Texto genérico.</item>
+        <item>Texto genérico.</item>
+        <item>Texto genérico.</item>
+        <item>Texto genérico.</item>
+        <item>Texto genérico.</item>
+        <item>Texto genérico.</item>
+        <item>Texto genérico.</item>
+
+    </string-array>
+</resources>
